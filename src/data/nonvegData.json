@@ -1,0 +1,51 @@
+[
+    {
+        "id": 7,
+        "title": "Chicken Tikka Pizza",
+        "description": "Tender, flavourful chunks of delicious tandoori chicken, on a bed of creamy cheese waiting to explode in your mouth!",
+        "image": "../images/pizzas/chicken-tikka.webp",
+        "alt": "Chicken Tikka Cheese Burst Pizza",
+        "price": 580
+    },
+    {
+        "id": 8,
+        "title": "Meatball and BBQ Pizza",
+        "description": "Barbeque Chicken, Sliced Chicken Meatballs, Onion, Mozzarella Cheese. The best of the West in a majestic combination. Super cheesy, super rare!",
+        "image": "../images/pizzas/meatball-bbq.webp",
+        "alt": "Meatball and BBQ Chicken Cheese Burst Pizza",
+        "price": 645
+    },
+    {
+        "id": 9,
+        "title": "Kheema and Sausages Pizza",
+        "description": "Chicken Tikka, Sliced Chicken Meatballs, Onion, Mozzarella Cheese. East meets West in this unforgettably meaty and supremely cheesy fusion!",
+        "image": "../images/pizzas/kheema-sausage.webp",
+        "alt": "Kheema and Sausages Cheese Burst Pizza",
+        "price": 645
+    },
+    {
+        "id": 10,
+        "title": "Butter Chicken Pizza",
+        "description": "Chicken Chunks, Butter Chicken Gravy, Capsicum, Mozzarella Cheese. Chunks of butter chicken alongside rich creamy gravy, layered on a bed of cheesy lava!",
+        "image": "../images/pizzas/butter-chicken.webp",
+        "alt": "Butter Chicken Cheese Burst Pizza",
+        "price": 645
+    },
+    {
+        "id": 11,
+        "title": "Triple Chicken Pizza",
+        "description": "Chicken Tikka, Sliced Chicken Meatballs, Chicken Sausages, Onion, Mozzarella Cheese. Heres a peep into a chicken lovers heaven, over a bed of cheesy lava!",
+        "image": "../images/pizzas/triple-chicken.webp",
+        "alt": "Triple Chicken Pizza",
+        "price": 745
+    },
+    {
+        "id": 12,
+        "title": "Mutton Overload Pizza",
+        "description": "Mutton Chunks, Chicken Keema, Mozzarella Cheese. Mutton on a pizza? If thats tempting, imagine it with a burst of cheese!",
+        "image": "../images/pizzas/mutton-overload.webp",
+        "alt": "Mutton Overload Cheese Burst Pizza",
+        "price": 780
+    }
+
+]
