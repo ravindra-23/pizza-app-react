@@ -1,0 +1,30 @@
+.list-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.non-veg-pizzas {
+    margin-block: 4rem;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .explore {
+        font-size: 1rem;
+    }
+}
