@@ -1,0 +1,7 @@
+export { default as Navbar } from './Navbar/Navbar'
+export { default as Banner } from './Banner/Banner'
+export { default as ItemCard } from './ItemCard/ItemCard'
+export { default as Pizzas } from './Products/Pizzas/Pizzas'
+export { default as Desserts } from './Products/Deserts/Desserts'
+export { default as Sides } from './Products/Sides/Sides'
+export { default as Products } from './Products/Products'
