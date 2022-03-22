@@ -5,7 +5,7 @@ import './styles.css'
 
 const Navbar = () => {
   return (
-    <div className='container'>
+    <div className='nav-container'>
         <div className='item'>
             <div className='phone-icon'>
                 <img src='images/telephone.png' alt='phone' className='phone' width="32" height="32" />
