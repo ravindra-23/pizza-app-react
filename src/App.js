@@ -1,11 +1,18 @@
 import React from 'react'
-import Navbar from './components/Navbar/Navbar'
+import Home from './Pages/Home'
 import './global-styles.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ProductsPage from './Pages/ProductsPage'
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <Router>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/:param' element={<ProductsPage />} />
+        </Routes>
+      </Router>
     </>
   )
 }
