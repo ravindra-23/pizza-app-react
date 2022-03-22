@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from './components/Navbar/Navbar'
+import './global-styles.css'
 
 const App = () => {
   return (
-    <div>React App Working test</div>
+    <>
+      <Navbar />
+    </>
   )
 }
 
