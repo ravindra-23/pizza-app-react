@@ -16,6 +16,7 @@ const Banner = () => {
         1024: { items: 1 },
     };
   return (
+    <div className='carousel-container'>
       <AliceCarousel 
         mouseTracking
         infinite
@@ -27,6 +28,7 @@ const Banner = () => {
         responsive={responsive}
         autoPlay
       />
+    </div>
   )
 }
 
