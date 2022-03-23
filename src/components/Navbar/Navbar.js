@@ -1,12 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Badge, IconButton, MenuItem, Menu } from '@mui/material'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './styles.css'
+import { CartContext } from '../../Context/useCartContext'
 
 const Navbar = () => {
-  const navigate = useNavigate();
+  const { cart } = useContext(CartContext)
   const [anchorEl, setAnchorEl] = useState(null)
     const open = Boolean(anchorEl);
     console.log(anchorEl)
@@ -30,24 +31,24 @@ const Navbar = () => {
         </div>
         <div className='item nav-links'>
             <ul className='list'>
-            <Link to='/' onClick={() => navigate('/')}>
+            <Link to='/'>
               <li className='listItem'>Home</li>
             </Link>
-            <Link to='/pizzas' onClick={() => navigate('/pizzas')}>
+            <Link to='/pizzas'>
               <li className='listItem'>Pizza's</li>
             </Link>
-            <Link to='/desserts' onClick={() => navigate('/desserts')}>
+            <Link to='/desserts'>
               <li className='listItem'>Desserts</li>
             </Link>
-            <Link to='/sides' onClick={() => navigate('/sides')}>
+            <Link to='/sides'>
               <li className='listItem'>Sides</li>
             </Link>
             </ul>
         </div>
         <div className='item cart-menu'>
           <div className='cart'>
-            <IconButton color='primary' style={{ color: '#fff', marginRight: '20px' }}>
-              <Badge badgeContent={4}>
+            <IconButton color='primary' style={{ color: '#fff', marginRight: '20px' }} component={Link} to='/cart'>
+              <Badge badgeContent={cart.length}>
                   <ShoppingCartIcon fontSize='large' />
               </Badge>
             </IconButton>
