@@ -20,6 +20,7 @@ const Pizzas = ( { simplified }) => {
                 {data.map(pizza => (
                     <Grid item xs={12} sm={6} md={4} lg={4} key={pizza.id}>
                         <ItemCard
+                            item={pizza}
                             title={pizza.title}
                             description={pizza.description}
                             alt={pizza.alt}
@@ -38,6 +39,7 @@ const Pizzas = ( { simplified }) => {
                 {nonvegdata.map(pizza => (
                     <Grid item xs={12} sm={6} md={4} lg={4}>
                         <ItemCard 
+                            item={pizza}
                             title={pizza.title}
                             description={pizza.description}
                             alt={pizza.alt}

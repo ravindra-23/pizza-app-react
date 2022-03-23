@@ -16,6 +16,7 @@ const Desserts = ({ simplified }) => {
             {data.map(dessert => (
                 <Grid item xs={12} sm={6} md={4} lg={4} key={dessert.id}>
                     <ItemCard
+                        item={dessert}
                         title={dessert.title}
                         description={dessert.description}
                         alt={dessert.alt}
