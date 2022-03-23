@@ -1,0 +1,15 @@
+.cart-container {
+    margin-block: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    padding-block: 2rem;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    border-top: .5px solid #74c69d;
+}
