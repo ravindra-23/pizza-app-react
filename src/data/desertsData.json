@@ -5,7 +5,8 @@
         "description": "Little muffin with a heart of chocolate! An all time classic and a serious all timer of a dessert!",
         "image": "../images/desserts/molten-lava.webp",
         "alt": "Molten Lava Cake",
-        "price": 100
+        "price": 100,
+        "quantity": 1
     },
     {
         "id": 14,
@@ -13,7 +14,8 @@
         "description": "(Eggless) Gooey & fudgy on the inside and nutty on the outside give you serious dessert goals.",
         "image": "../images/desserts/hazelnut.webp",
         "alt": "Hazelnut Brownie",
-        "price": 125
+        "price": 125,
+        "quantity": 1
     },
     {
         "id": 15,
@@ -21,7 +23,8 @@
         "description": "Rich and moist Red Velvet cake layered with fresh cream cheese makes our Red Velvet pastry difficult to share.",
         "image": "../images/desserts/red-velvet.webp",
         "alt": "Rich Red Velvet Pastry",
-        "price": 165
+        "price": 165,
+        "quantity": 1
     },
     {
         "id": 16,
@@ -29,7 +32,8 @@
         "description": "(Eggless) Layers of soft chocolate sponge and dense but silky-smooth chocolate ganache make this cake a decadent celebration.",
         "image": "../images/desserts/truffle.webp",
         "alt": "Chocolate Truffle Pastry",
-        "price": 165
+        "price": 165,
+        "quantity": 1
     },
     {
         "id": 17,
@@ -37,7 +41,8 @@
         "description": "(Eggless) This New York Style Mango Cheesecake, made with premium quality cream cheese!",
         "image": "../images/desserts/mango-cheesecake.webp",
         "alt": "Mango Cheesecake",
-        "price": 165
+        "price": 165,
+        "quantity": 1
     },
     {
         "id": 18,
@@ -45,7 +50,8 @@
         "description": "[Contains Egg] Dense, creamy & smooth Philadelphia cream cheese paired with a crust made with crackers & butter with a hint of ginger.",
         "image": "../images/desserts/new-york.webp",
         "alt": "New York Cheesecake",
-        "price": 165
+        "price": 165,
+        "quantity": 1
     }
 
 ]

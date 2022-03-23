@@ -5,7 +5,8 @@
         "description": "Tender Paneer Tikka, Corn, Olives, Onion, Mozzarella Cheese. Enjoy the deliciousness of paneer with colourful veggies in every bite!",
         "image": "../images/pizzas/panner-tikka.webp",
         "alt": "Paneer Tikka Pizza",
-        "price": 450
+        "price": 450,
+        "quantity": 1
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "description": "Mozzarella Cheese, Parsley. Relish an abundance of rich Mozzarella cheese in every bite, topped with finely chopped parsley, on a herbed, soft crust.",
         "image": "../images/pizzas/overload-cheese.webp",
         "alt": "../images/pizzas/overload-cheese.webp",
-        "price": 550
+        "price": 550,
+        "quantity": 1
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "description": "Paneer Tikka, Jalapenos, Black Olives, American Corn, Onion, Mozzarella Cheese. Relish our awesome five-some veggie combo gooey cheese!",
         "image": "../images/pizzas/famous-five.webp",
         "alt": "Famous Five Cheese Burst Pizza",
-        "price": 650
+        "price": 650,
+        "quantity": 1
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "description": "Falafels, Roasted Crunchy Veggies, Mozzarella Cheese. Delicate Mediterranean flavours entangled with the abundance of pure molten cheese!",
         "image": "../images/pizzas/veg-falafel.webp",
         "alt": "Veg Falafel Supreme Pizza Cheese Burst Pizza",
-        "price": 680
+        "price": 680,
+        "quantity": 1
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "description": "Paneer Tikka, Jalapenos, Bell Peppers, Olives, Onion, Mozzarella Cheese. A generous spread of paneer chunks & delicious veggies!",
         "image": "../images/pizzas/maharaja-veg.webp",
         "alt": "Maharaja Veg Cheese Burst Pizza Pizza",
-        "price": 680
+        "price": 680,
+        "quantity": 1
     },
     {
         "id": 6,
@@ -45,7 +50,8 @@
         "description": "Our Double Cheese Margherita pizza, coupled with melt-in-the-mouth creamy cheese inside a herbed, soft crust.",
         "image": "../images/pizzas/marghreta.webp",
         "alt": "Double Cheese Margherita Cheese Burst Pizza",
-        "price": 500
+        "price": 500,
+        "quantity": 1
     }
 
 ]

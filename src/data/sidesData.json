@@ -5,7 +5,8 @@
         "description": "Flavorful and spicy cheesy dip.",
         "image": "../images/sides/cheese.webp",
         "alt": "Peri Peri Cheese Dip",
-        "price": 25
+        "price": 25,
+        "quantity": 1
     },
     {
         "id": 20,
@@ -13,7 +14,8 @@
         "description": "Chipotle Cheese Dip [20 gm]",
         "image": "../images/sides/chipotle.webp",
         "alt": "Chipotle Cheese Dip",
-        "price": 25
+        "price": 25,
+        "quantity": 1
     },
 
     {
@@ -22,7 +24,8 @@
         "description": "Chipotle, Peri Peri, Tandoori and El Classico, which one gives you a calling?",
         "image": "../images/sides/combo-dip.webp",
         "alt": "4 Cheese Dips Combo",
-        "price": 90
+        "price": 90,
+        "quantity": 1
     },
     {
         "id": 22,
@@ -30,7 +33,8 @@
         "description": "Coca-Cola Bottle (475 ML)",
         "image": "../images/sides/coke.webp",
         "alt": "Coca-Cola (475 ML)",
-        "price": 60
+        "price": 60,
+        "quantity": 1
     },
     {
         "id": 23,
@@ -38,7 +42,8 @@
         "description": "Aerated drink flavored with the mouth-puckering green apple",
         "image": "../images/sides/green-apple.webp",
         "alt": "SWIG Green Apple",
-        "price": 50
+        "price": 50,
+        "quantity": 1
     },
     {
         "id": 24,
@@ -46,7 +51,8 @@
         "description": "Aerated drink with the added zing of jeera and masala",
         "image": "../images/sides/jeera-masala.webp",
         "alt": "SWIG Jeera Masala",
-        "price": 50
+        "price": 50,
+        "quantity": 1
     }
     
 ]
