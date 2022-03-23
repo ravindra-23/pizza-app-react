@@ -6,7 +6,7 @@ import './styles.css'
 import CartItem from './CartItem/CartItem'
 
 const Cart = () => {
-    const { cart } = useContext(CartContext)
+    const { cart, emptyCart, totalPrice } = useContext(CartContext)
 
     const renderCart = () => (
         <div className='cart-info'>
@@ -18,10 +18,28 @@ const Cart = () => {
                 ))}
             </Grid>
             <div className='details'>
-                <Typography variant="h4">Subtotal: ₹</Typography>
+                <Typography variant="h4">Subtotal: ₹{totalPrice}</Typography>
                 <div className='cta-btns'>
-                    <Button size="large" type="button" variant="contained" color="success" style={{ marginRight: '20px' }}>Empty cart</Button>
-                    <Button component={Link} to="/checkout" size="large" type="button" variant="contained" color="primary">Checkout</Button>
+                    <Button 
+                        size="large" 
+                        type="button" 
+                        variant="contained" 
+                        color="success" 
+                        style={{ marginRight: '20px' }} 
+                        onClick={() => emptyCart()}
+                    >
+                        Empty cart
+                    </Button>
+                    <Button 
+                        component={Link} 
+                        to="/checkout" 
+                        size="large" 
+                        type="button" 
+                        variant="contained" 
+                        color="primary"
+                    >
+                         Checkout
+                    </Button>
                 </div>
             </div>
         </div>

@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Button, Card, CardContent, CardMedia, Typography } from '@mui/material'
+import { CartContext } from '../../Context/useCartContext'
 
-const ItemCard = ({ title, description, image, price }) => {
+const ItemCard = ({ title, description, image, price, item }) => {
+  const { addToCart } = useContext(CartContext);
   return (
     <Card>
         <CardMedia image={image} style={{height: 0, paddingTop: '56.25%', marginTop:'30'}}/>
@@ -11,7 +13,7 @@ const ItemCard = ({ title, description, image, price }) => {
         </CardContent>
         <CardContent style={{ display: 'flex', justifyContent: 'space-between' }}>
             <Typography variant='h6'>₹{price}</Typography>
-            <Button size='small' variant='contained' color='error'>Add</Button>
+            <Button size='small' variant='contained' color='error' onClick={() => addToCart(item)}>Add</Button>
         </CardContent>
     </Card>
   )
