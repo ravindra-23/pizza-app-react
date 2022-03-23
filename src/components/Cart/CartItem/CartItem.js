@@ -1,0 +1,27 @@
+import React from 'react'
+import { Card, CardMedia, CardContent, Typography, CardActions, Button } from '@mui/material'
+import './styles.css'
+
+const CartItem = ({ item, index }) => {
+  return (
+    <div className='item-card'>
+        <Card className="cart-item" sx={{ maxWidth: 300 }}>
+            <CardMedia image={item.image} alt={item.alt} style={{height: 0, paddingTop: '56.25%', marginTop:'30'}} />
+            <CardContent>
+                <Typography variant="h6">{item.title}</Typography>
+                <Typography variant="h5">₹{item.price}</Typography>
+            </CardContent>
+            <CardActions className='actions' style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <div className='buttons' style={{ display: 'flex', alignItems: 'center' }}>
+                    <Button type="button" size="small">-</Button>
+                    <Typography>&nbsp;{item.quantity}&nbsp;</Typography>
+                    <Button type="button" size="small">+</Button>
+                </div>
+                <Button variant="contained" type="button" color="success">Remove</Button>
+            </CardActions>
+        </Card>
+    </div>
+  )
+}
+
+export default CartItem

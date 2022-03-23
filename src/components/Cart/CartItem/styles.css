@@ -1,0 +1,10 @@
+.card {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.item-quantity-btns {
+    display: flex;
+    align-items: center;
+}
