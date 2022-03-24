@@ -32,7 +32,7 @@ const Cart = () => {
                     </Button>
                     <Button 
                         component={Link} 
-                        to="/checkout" 
+                        to="/checkout/address" 
                         size="large" 
                         type="button" 
                         variant="contained" 
@@ -47,7 +47,7 @@ const Cart = () => {
 
     const renderEmptyCart = () => (
         <>
-            <Typography variant='subtitle1' gutterBottom>You have no items in your shopping cart,</Typography>
+            <Typography variant='subtitle1' gutterBottom>You have no items in your Food Bag,</Typography>
             <Link to='/'>Start Adding Some.</Link>
         </>
     )
