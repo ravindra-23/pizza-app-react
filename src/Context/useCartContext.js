@@ -17,12 +17,12 @@ const CartContextProvider = ({ children }) => {
     const [payment, setPayment] = useState({name: '', cardNumber: '', expiry: '', cvv: ''})
 
     const isAddressInvalid = address.firstName === '' || 
-                      address.lastName === '' || 
-                      address.address1 === '' || 
-                      address.city === '' || 
-                      address.state === '' || 
-                      address.zip === '' || 
-                      address.country === ''
+                            address.lastName === '' || 
+                            address.address1 === '' || 
+                            address.city === '' || 
+                            address.state === '' || 
+                            address.zip === '' || 
+                            address.country === ''
                       
     const isPaymentInvalid = payment.name === '' || 
                              payment.cardNumber === '' || 

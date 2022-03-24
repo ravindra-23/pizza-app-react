@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { CartContext } from '../../Context/useCartContext'
 
 const AddressForm = () => {
-    const { setAddress, isInvalid } = useContext(CartContext)
+    const { setAddress, isAddressInvalid } = useContext(CartContext)
   return (
     <>
         <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
@@ -108,7 +108,7 @@ const AddressForm = () => {
             </Paper>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Button component={Link} variant="outlined" to="/cart">Back to Cart</Button>
-                <Button disabled={isInvalid} type="submit" variant="contained" color="primary" component={Link} to='/checkout/payment'>Payment</Button>
+                <Button disabled={isAddressInvalid} type="submit" variant="contained" color="primary" component={Link} to='/checkout/payment'>Payment</Button>
             </div>
         </Container>
     </>
