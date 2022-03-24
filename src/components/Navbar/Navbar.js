@@ -23,7 +23,7 @@ const Navbar = () => {
     <div className='nav-container'>
         <div className='item'>
             <div className='pizza-icon'>
-                <img src='images/logo.png' alt='phone' className='pizza' width="32" height="32" />
+                <img src='../images/logo.png' alt='phone' className='pizza' width="32" height="32" />
             </div>
             <div className='texts'>
                 <h2 className='text'>Pizza's</h2>
