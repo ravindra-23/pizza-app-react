@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { CartContext } from '../../Context/useCartContext'
 
 const PaymentForm = () => {
-  const { setPayment } = useContext(CartContext)
+  const { setPayment, isPaymentInvalid } = useContext(CartContext)
   return (
     <>
       <Container component="main" maxWidth="sm" sx={{ mb: 4 }}>
@@ -62,7 +62,7 @@ const PaymentForm = () => {
           </Paper>
           <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <Button component={Link} variant="outlined" to="/checkout/address">Back</Button>
-                <Button type="submit" variant="contained" color="primary" component={Link} to='/checkout/review'>Review</Button>
+                <Button disabled={isPaymentInvalid} type="submit" variant="contained" color="primary" component={Link} to='/checkout/review'>Review</Button>
           </div>
       </Container>
     </>

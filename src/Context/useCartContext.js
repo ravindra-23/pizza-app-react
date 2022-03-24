@@ -15,7 +15,20 @@ const CartContextProvider = ({ children }) => {
         country: ''
     });
     const [payment, setPayment] = useState({name: '', cardNumber: '', expiry: '', cvv: ''})
-    console.log(cart)
+
+    const isAddressInvalid = address.firstName === '' || 
+                      address.lastName === '' || 
+                      address.address1 === '' || 
+                      address.city === '' || 
+                      address.state === '' || 
+                      address.zip === '' || 
+                      address.country === ''
+                      
+    const isPaymentInvalid = payment.name === '' || 
+                             payment.cardNumber === '' || 
+                             payment.expiry === '' || 
+                             payment.cvv === ''
+
     const totalItems = cart.map(item => item.price * item.quantity)
     const totalPrice = totalItems.reduce((total, item) => total + item, 0).toLocaleString() 
 
@@ -48,7 +61,7 @@ const CartContextProvider = ({ children }) => {
         setCart(updatedCart);
     }
     return (
-        <CartContext.Provider value={{ cart, addToCart, removeFromCart, emptyCart, increaseQuantity, decreaseQuantity, totalPrice, setAddress, address, setPayment, payment }}>
+        <CartContext.Provider value={{ cart, addToCart, removeFromCart, emptyCart, increaseQuantity, decreaseQuantity, totalPrice, setAddress, address, setPayment, payment, isPaymentInvalid, isAddressInvalid }}>
             {children}
         </CartContext.Provider>
     )

@@ -4,7 +4,7 @@ import { Typography, List, ListItem, ListItemText, Container, Paper, Button } fr
 import { Link } from 'react-router-dom';
 
 const Review = () => {
-    const { cart, totalPrice, payment } = useContext(CartContext);
+    const { cart, totalPrice, payment, emptyCart } = useContext(CartContext);
   return (
     <>
       <Container maxWidth="sm" sx={{ mb: 4 }}>
@@ -32,7 +32,7 @@ const Review = () => {
         </Paper>
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
             <Button component={Link} variant="outlined" to="/checkout/payment">Back</Button>
-            <Button type="submit" variant="contained" color="primary" component={Link} to='/checkout/orders'>Place Order</Button>
+            <Button type="submit" variant="contained" color="primary" component={Link} to='/checkout/orders' onClick={() => emptyCart()}>Place Order</Button>
         </div>
     </Container>
     </>
