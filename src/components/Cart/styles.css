@@ -13,3 +13,13 @@
     padding: 2rem;
     border-top: .5px solid #74c69d;
 }
+
+@media (max-width: 768px) {
+    .details {
+        flex-direction: column;
+    }
+
+    .cta-btns {
+        display: flex;
+    }
+}

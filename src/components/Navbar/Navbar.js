@@ -29,6 +29,7 @@ const Navbar = () => {
                 <h2 className='text'>Pizza's</h2>
             </div>
         </div>
+        <div style={{ flexGrow: 1 }} />
         <div className='item nav-links'>
             <ul className='list'>
             <Link to='/'>
