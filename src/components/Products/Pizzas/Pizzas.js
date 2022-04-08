@@ -37,7 +37,7 @@ const Pizzas = ( { simplified }) => {
             </div>
             <Grid container spacing={4} justifyContent='center'>
                 {nonvegdata.map(pizza => (
-                    <Grid item xs={12} sm={6} md={4} lg={4}>
+                    <Grid item xs={12} sm={6} md={4} lg={4} key={pizza.id}>
                         <ItemCard 
                             item={pizza}
                             title={pizza.title}

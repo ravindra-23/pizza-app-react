@@ -12,7 +12,7 @@ const Review = () => {
             <Typography variant="h6" gutterBottom>Order summary</Typography>
             <List disablePadding>
               {cart.map((item) => (
-                  <ListItem style={{ padding: '10px 0' }} key={item.name}>
+                  <ListItem style={{ padding: '10px 0' }} key={item.id}>
                   <ListItemText primary={item.title} secondary={`Quantity: ${item.quantity}`} />
                   <Typography variant="body2">₹{item.price}</Typography>
                   </ListItem>
