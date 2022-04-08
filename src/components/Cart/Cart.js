@@ -12,13 +12,13 @@ const Cart = () => {
         <div className='cart-info'>
             <Grid container spacing={4}>
                 {cart?.map((cartItem, index) => (
-                    <Grid item xs={12} sm={3}>
+                    <Grid key={cartItem.id} item xs={12} sm={3} justifyContent='center'>
                         <CartItem item={cartItem} index={index} />
                     </Grid>
                 ))}
             </Grid>
             <div className='details'>
-                <Typography variant="h4">Subtotal: ₹{totalPrice}</Typography>
+                <Typography variant="h4" gutterBottom>Subtotal: ₹{totalPrice}</Typography>
                 <div className='cta-btns'>
                     <Button 
                         size="large" 
